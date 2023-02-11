@@ -9,8 +9,8 @@ import pandas as pd
 app=Flask(__name__)
 
 # Loading the model
-regmodel = pickle.load(open('regmodel.pkl','rb'))
-scalar = pickle.load(open('scaling.pkl','rb'))
+regmodel = pickle.load(open('./models/regmodel.pkl','rb'))
+scalar = pickle.load(open('./models/scaling.pkl','rb'))
 
 @app.route('/')
 def home():
